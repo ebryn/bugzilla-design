@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'FiraSansOT';
+  src: url('fonts/FiraSansOT-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraSansOT' format('otf');
+  src: url('fonts/FiraSansOT-RegularItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'FiraSansOT' format('otf');
+  src: url('fonts/FiraSansOT-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraSansOT' format('otf');
+  src: url('fonts/FiraSansOT-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+body {
+  font-family: FiraSansOT, Helvetica, sans serif;
+}
+
+input, select {
+  width: 99%;
+  display: inherit;
+}
+
+input[type=text] {
+  border-radius: 3px;
+  border: 1px solid #C4C4C4;
+}
+
+.edit-side-bar {
+  position: absolute;
+  right: 0;
+  width: 25%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  background-color: #f2f0e9;
+}
+
+.edit-side-bar > div {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}
+
+.cancel-btn {
+  width: 50%;
+  background-color: #ea5439;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.save-btn {
+  width: 50%;
+  background-color: #57ba45;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-left: -4px;
+}
+
+.alert {
+  background-color: #cedfeb;
+  text-align: center;
+  color: #7979E0;
+  border: 1px solid #7979E0;
+  border-radius: 2px;
+}
+
+.status-res > div{
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+}
+
