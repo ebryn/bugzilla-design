@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>edit</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='normalize.css'>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+  <link rel='stylesheet' href='styleguide.css'>
+</head>
+<body style="padding: 10px">
+  <h3>Text fields</h3>
+
+  <div class="text">
+    <span>Implement Promises</span>
+  </div>
+
+  <div class="text">
+    <input type="text" value="Implement Promises">
+  </div>
+
+  <div class="text big">
+    <span>Implement Promises</span>
+  </div>
+
+  <div class="text big">
+    <input type="text" value="Implement Promises">
+  </div>
+
+  <div class="textarea">
+    <textarea>839838 854627 865789 875018 875299 882076 885333 899557 915233 916523 916525 875289 876397 879245</textarea>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script>
+    $('.text').on('click', function(e) {
+      if (this.children[0].tagName === "SPAN") {
+        this.innerHTML = '<input type="text" value="Implement Promises">';
+      } else {
+        this.innerHTML = '<span>Implement Promises</span>';
+      }
+    });
+
+    $('.textarea').on('click', function(e) {
+      if (this.children[0].tagName === "SPAN") {
+        this.innerHTML = '<textarea>839838 854627 865789 875018 875299 882076 885333 899557 915233 916523 916525 875289 876397 879245</textarea>';
+      } else {
+        this.innerHTML = '<span><a href="#">839838</a> 854627 865789 875018 875299 882076 885333 899557 915233 916523 916525 875289 876397 879245</span>';
+      }
+    });
+
+    // $('.text > input').on('click', function(e) {
+    //   var el = $(this);
+    //   el.attr('readonly', el.attr('readonly') ? null : 'readonly');
+    // });
+  </script>
+</body>
+</html>
