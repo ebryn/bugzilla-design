@@ -6,32 +6,139 @@
   <link rel='stylesheet' href='edit.css'>
 </head>
 <body>
-  <div class="edit-side-bar">
-    <div>
-      <button class="cancel-btn">Cancel</button>
-      <button class="save-btn">Save</button>
-    </div>
+  <div class="wrapper">
+  <div class="bug-info">
+    
+  </div>
 
-    <div class="alert">
-      You have unsaved changes
-    </div>
-    <div class="status-res">
+    <div class="edit-side-bar">
       <div>
-        <label>STATUS</label>
-        <select type="select"></select>
+        <button class="cancel-btn">Cancel</button>
+        <button class="save-btn">Save</button>
+      </div>
+
+      <div class="alert">
+        You have unsaved changes
+      </div>
+      <div class="status-res">
+        <div>
+          <label>STATUS</label>
+          <select type="select"></select>
+        </div>
+        <div>
+          <label>RESOLUTION</label>
+          <select type="select"></select>
+        </div>
       </div>
       <div>
-        <label>RESOLUTION</label>
-        <select type="select"></select>
+        <label>WHITEBOARD:</label>
+        <input type="text">
+        <hr>
       </div>
-    </div>
-    <div>
-      <label>WHITEBOARD:</label>
-      <input type="text">
-    </div>
+      <div>
+        <label>KEYWORDS</label>
+        <input type="text">
+        <button class="add-btn">+</button>
+        <hr>
+      </div>
+      <div>
+        <label>PRODUCT: <a href="#">?</a></label>
+        <input type="text">
+      </div>
+      <div>
+        <label>COMPONENT: <a href="#">?</a></label>
+        <input type="text">
+        <hr>
+      </div>
+      <div>
+        <label>VERSION:</label>
+        <select>
+          <option>Trunk</option>
+          <option>etc</option>
+        </select>
+        <hr>
+      </div>
+      <div>
+        <label>HARDWARE:</label>
+        <select>
+          <option>All</option>
+          <option>etc</option>
+        </select>
+        <select>
+          <option>All</option>
+          <option>etc</option>
+        </select>
+        <hr>
+      </div>
+      <div>
+        <label>IMPORTANCE: <a href="#">with 3 votes</a> <a href="#">vote</a></label>
+        <select>
+          <option>--</option>
+          <option>etc</option>
+        </select>
+        <select>
+          <option>normal</option>
+          <option>etc</option>
+        </select>
+        <hr>
+      </div>
+      <div>
+        <label>ASSIGNEE:</label>
+        <input type="text" placeholder="bug@mozilla.org">
+        <button class="add-btn">+</button>
+        <hr>
+      </div>
+      <div>
+        <label>URL:</label>
+        <input type="text" placeholder="www.mozilla.org">
+        <hr>
+      </div>
+      <div>
+        <label>DEPENDS ON:</label>
+        <textarea placeholder="878849 878849 878849 878849">
+        </textarea>
+        <hr>
+      </div>
+      <div>
+        <label>BLOCKS:</label>
+        <textarea placeholder="878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849 878849">
+        </textarea>
+        <hr>
+      </div>
+      <div>
+        <label>CC LIST:</label>
+        <a href="#">42 users (including you)</a>
+        <button class="write-btn">i pen</button>
+        <input type="checkbox">Send me notifications about this bug
+        <hr>
+      </div>
+      <div>
+        <label>GROUPS:</label>
+        <a href="#">2 groups selected</a>
+        <button class="write-btn">i pen</button>
+        <hr>
+      </div>
+      <div>
+        <label>FLAGS <a href="#">?</a></label>
+        <input type="text">
+        <button class="write-btn">i pen</button>
+        <button class="delete-btn">i pen</button>
+        <label>Add a flag
+          <button class="add-btn">+</button>
+        </label>
+        <hr>
+      </div>
+      <div>
+        <label>SEE ALSO <a href="#">?</a>
+          <input type="text">
+        </label>
+        <label>Add a URL
+          <button class="add-btn">+</button>
+        </label>
+        <hr>
+      </div>
 
-    <div>
-
     </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>

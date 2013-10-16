@@ -40,13 +40,24 @@ input[type=text] {
   border: 1px solid #C4C4C4;
 }
 
-.edit-side-bar {
+.wrapper {
+  width: 1280px;
   position: absolute;
-  right: 0;
-  width: 25%;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #f2f0e9;
+}
+
+.bug-info {
+  height: 100px;
+  background-color: #ffffff;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.edit-side-bar {
+  float: right;
+  width: 25%;
 }
 
 .edit-side-bar > div {
@@ -72,6 +83,12 @@ input[type=text] {
   border: 1px solid black;
   border-radius: 2px;
   margin-left: -4px;
+}
+
+.add-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
 }
 
 .alert {
