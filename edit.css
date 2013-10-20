@@ -28,20 +28,51 @@
 
 body {
   font-family: FiraSansOT, Helvetica, sans serif;
+  background-color: #f2f0e9;
 }
 
-input, select {
-  width: 99%;
-  display: inherit;
+hr {
+  border-top: 1px dotted #d7d3c8;
 }
 
-input[type=text] {
+input, select, textarea {
   border-radius: 3px;
   border: 1px solid #C4C4C4;
+  width: 99%;
+  display: inline-block;
+  height: 20px;
+  font-size: 16px;
+  padding: 2px;
+  padding-left: 4px;
+}
+
+select {
+  height: 20px;
+  width: 140px;
+  border: 0;
+  /*-webkit-appearance: menulist-textfield;
+  -moz-appearance: menulist-textfield;*/
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  width: 15px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+button {
+  display: inline-block;
 }
 
 .wrapper {
   width: 1280px;
+  height: 100%;
+  min-height: 100%;
   position: absolute;
   padding-left: 15px;
   padding-right: 15px;
@@ -55,9 +86,29 @@ input[type=text] {
   margin-bottom: 25px;
 }
 
+.attachments {
+  display: inline-block;
+  width: 970px;
+  min-height: 200px;
+  background-color: #d7d3c8;
+
+}
+
+.comment {
+  display: inline-block;
+  width: 970px;
+  margin-top: 30px;
+  min-height: 200px;
+  background-color: #ffff84;
+}
+
 .edit-side-bar {
-  float: right;
-  width: 25%;
+  position: absolute;
+  right: 15px;
+  top: 175px;
+  background-color: #f2f0e9;
+
+  width: 300px;
 }
 
 .edit-side-bar > div {
@@ -66,6 +117,11 @@ input[type=text] {
   float: left;
   margin-top: 0.5em;
   font-size: 0.8em;
+}
+
+.with-button > input {
+  width: 130px;
+  display: inline-block;
 }
 
 .cancel-btn {
@@ -85,18 +141,29 @@ input[type=text] {
   margin-left: -4px;
 }
 
-.add-btn {
+.delete-btn {
+  width: 15px;
+}
+
+.add-btn, .write-btn {
   width: 22px;
   height: 22px;
   border-radius: 2px;
+  background-color:#69bcf3;
+}
+
+.write-btn {
+  float: right;
 }
 
 .alert {
+  height: 20px;
   background-color: #cedfeb;
   text-align: center;
   color: #7979E0;
   border: 1px solid #7979E0;
   border-radius: 2px;
+  padding-top: 5px;
 }
 
 .status-res > div{
@@ -105,3 +172,36 @@ input[type=text] {
   text-align: center;
 }
 
+.keywords > input, .keywords > .delete-btn {
+  background-color: #d7d3c8;
+}
+
+.product > select, .component > select {
+  width: 300px;
+}
+
+.version > select {
+  width: 170px;
+}
+
+.hardware > select, .importance > select {
+  width: 192px;
+}
+
+.hardware select:first-of-type, .importance select:first-of-type {
+  width: 100px;
+  margin-right: 5px;
+}
+
+.assignee > input {
+  width: 265px;
+}
+
+.cc > div, .groups > div {
+  color: #69bcf3;
+  font-size: 16px
+}
+
+  .flags input {
+  width: 245px;
+}

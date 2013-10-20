@@ -7,9 +7,27 @@
 </head>
 <body>
   <div class="wrapper">
-  <div class="bug-info">
-    
-  </div>
+
+    <div class="bug-info">
+
+    </div>
+
+    <div class="attachments">
+
+    </div>
+
+    <div class="comment">
+
+    </div>
+
+    <div class="comment">
+
+    </div>
+
+    <div class="comment">
+
+    </div>
+
 
     <div class="edit-side-bar">
       <div>
@@ -35,22 +53,29 @@
         <input type="text">
         <hr>
       </div>
-      <div>
+      <div class="with-button keywords">
         <label>KEYWORDS</label>
         <input type="text">
+        <button class="delete-btn">x</button>
         <button class="add-btn">+</button>
         <hr>
       </div>
-      <div>
+      <div class="product">
         <label>PRODUCT: <a href="#">?</a></label>
-        <input type="text">
+        <select>
+          <option>Choose</option>
+          <option>etc</option>
+        </select>
       </div>
-      <div>
+      <div class="component">
         <label>COMPONENT: <a href="#">?</a></label>
-        <input type="text">
+        <select>
+          <option>Choose</option>
+          <option>etc</option>
+        </select>
         <hr>
       </div>
-      <div>
+      <div class="version">
         <label>VERSION:</label>
         <select>
           <option>Trunk</option>
@@ -58,7 +83,7 @@
         </select>
         <hr>
       </div>
-      <div>
+      <div class="hardware">
         <label>HARDWARE:</label>
         <select>
           <option>All</option>
@@ -70,7 +95,7 @@
         </select>
         <hr>
       </div>
-      <div>
+      <div class="importance">
         <label>IMPORTANCE: <a href="#">with 3 votes</a> <a href="#">vote</a></label>
         <select>
           <option>--</option>
@@ -82,7 +107,7 @@
         </select>
         <hr>
       </div>
-      <div>
+      <div class="assignee">
         <label>ASSIGNEE:</label>
         <input type="text" placeholder="bug@mozilla.org">
         <button class="add-btn">+</button>
@@ -105,27 +130,38 @@
         </textarea>
         <hr>
       </div>
-      <div>
+      <div class="cc">
         <label>CC LIST:</label>
-        <a href="#">42 users (including you)</a>
-        <button class="write-btn">i pen</button>
-        <input type="checkbox">Send me notifications about this bug
-        <hr>
-      </div>
-      <div>
-        <label>GROUPS:</label>
-        <a href="#">2 groups selected</a>
-        <button class="write-btn">i pen</button>
-        <hr>
-      </div>
-      <div>
-        <label>FLAGS <a href="#">?</a></label>
-        <input type="text">
-        <button class="write-btn">i pen</button>
-        <button class="delete-btn">i pen</button>
-        <label>Add a flag
-          <button class="add-btn">+</button>
+        <div>
+          42 users (including you)
+          <button class="write-btn">i pen</button>
+        </div>
+        <label>
+          <input type="checkbox">
+          Send me notifications about this bug
         </label>
+        <hr>
+      </div>
+      <div class="groups">
+        <label>GROUPS:</label>
+        <div>
+          2 groups selected
+          <button class="write-btn">i</button>
+        </div>
+        <hr>
+      </div>
+      <div class="flags">
+        <label>FLAGS <a href="#">?</a></label>
+        <div>
+          <input type="text">
+          <button class="write-btn">i</button>
+          <button type="button" class="delete-btn">x</button>
+        </div>
+        <div>
+          <label>Add a flag
+            <button class="add-btn">+</button>
+          </label>
+        </div>
         <hr>
       </div>
       <div>
