@@ -30,10 +30,15 @@ body {
   font-family: Open Sans, Helvetica, sans serif;
   font-size: 16px;
   background-color: #f2f0e9;
+  color: #4e4e4e;
 }
 
 hr {
   border-top: 1px dotted #d7d3c8;
+}
+
+img {
+  vertical-align: middle;
 }
 
 input, select, textarea {
@@ -163,7 +168,7 @@ a:hover {
   width: 900px;
   margin-top: 13px;
   min-height: 200px;
-  background-color: #ffff84;
+  background-color: #ffffff;
 }
 
 .comment hr {
@@ -178,6 +183,39 @@ a:hover {
 .comments-show-all img {
   margin-right: 10px;
   margin-left: 20px;
+}
+
+.comment-header {
+  width: 831px;
+  margin-left: 34px;
+  margin-top: 28px;
+}
+
+.comment-header > img:last-of-type {
+  float: right;
+}
+
+.comment-header hr {
+  margin-top: 15px;
+}
+
+.avatar {
+  height: 44px;
+  margin-right: 10px;
+}
+
+.comment-date {
+  margin-left: 40px;
+}
+
+.comment-date img {
+  margin-right: 10px;
+}
+
+.comment-text {
+  width: 831px;
+  margin-left: 34px;
+  margin-bottom: 28px;
 }
 
 .edit-side-bar {
