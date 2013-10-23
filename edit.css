@@ -28,6 +28,7 @@
 
 body {
   font-family: Open Sans, Helvetica, sans serif;
+  font-size: 16px;
   background-color: #f2f0e9;
 }
 
@@ -67,6 +68,14 @@ label {
 
 button {
   display: inline-block;
+}
+
+a {
+  color: #0095DD;
+}
+
+a:hover {
+  color: #00539F;
 }
 
 .wrapper {
@@ -135,25 +144,40 @@ button {
   display: inline;
 }
 
+
+.main-view {
+  width: 900px;
+}
+
 .attachments {
   display: inline-block;
-  width: 970px;
+  width: 900px;
   min-height: 200px;
   background-color: #d7d3c8;
-  margin-bottom: 27px;
+  margin-bottom: 14px;
 
 }
 
 .comment {
   display: inline-block;
-  width: 970px;
-  margin-top: 30px;
+  width: 900px;
+  margin-top: 13px;
   min-height: 200px;
   background-color: #ffff84;
 }
 
 .comment hr {
   border-top: 1px solid #cecece;
+}
+
+.comments-show-all {
+  font-size: 16px;
+
+}
+
+.comments-show-all img {
+  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .edit-side-bar {
