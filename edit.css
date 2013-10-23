@@ -27,7 +27,7 @@
 
 
 body {
-  font-family: FiraSansOT, Helvetica, sans serif;
+  font-family: Open Sans, Helvetica, sans serif;
   background-color: #f2f0e9;
 }
 
@@ -80,10 +80,11 @@ button {
 }
 
 .bug-info {
-  height: 100px;
+  height: 104px;
   background-color: #ffffff;
-  margin-top: 55px;
-  margin-bottom: 25px;
+  margin-top: 122px;
+  margin-bottom: 35px;
+  width: 1214px;
 }
 
 .attachments {
@@ -91,6 +92,7 @@ button {
   width: 970px;
   min-height: 200px;
   background-color: #d7d3c8;
+  margin-bottom: 27px;
 
 }
 
@@ -104,8 +106,8 @@ button {
 
 .edit-side-bar {
   position: absolute;
-  right: 15px;
-  top: 175px;
+  right: 80px;
+  top: 261px;
   background-color: #f2f0e9;
 
   width: 300px;
