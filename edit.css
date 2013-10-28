@@ -46,18 +46,19 @@ input, select, textarea {
   border: 1px solid #C4C4C4;
   width: 99%;
   display: inline-block;
-  height: 20px;
+  height: 26px;
   font-size: 16px;
   padding: 2px;
   padding-left: 4px;
 }
 
 select {
-  height: 20px;
-  width: 140px;
-  border: 0;
-  /*-webkit-appearance: menulist-textfield;
-  -moz-appearance: menulist-textfield;*/
+  color: #4e4e4e;
+  height: 26px;
+  width: 110px;
+  background-color: #fff; 
+  border: 1px solid #d7d3c8;
+  
 }
 
 input[type=checkbox] {
@@ -87,9 +88,7 @@ a:hover {
   width: 1280px;
   height: 100%;
   min-height: 100%;
-  position: absolute;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
   background-color: #f2f0e9;
 }
 
@@ -219,6 +218,7 @@ a:hover {
 }
 
 .edit-side-bar {
+  display: inline-block;
   position: absolute;
   right: 80px;
   top: 261px;
@@ -232,7 +232,12 @@ a:hover {
   width: 100%;
   float: left;
   margin-top: 0.5em;
-  font-size: 0.8em;
+  font-size: 16px;
+}
+
+.edit-side-bar label {
+  font-size: 11px;
+  font-weight: 800;
 }
 
 .with-button > input {
@@ -241,24 +246,70 @@ a:hover {
 }
 
 .cancel-btn {
-  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  width: 150px;
+  height: 44px;
   background-color: #ea5439;
   color: white;
-  border: 1px solid black;
+  border: 1px solid #b02832;
   border-radius: 3px;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom, #f05f64 0%, #e4474d 100%);
+      /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom, #f05f64 0%, #e4474d 100%);
+      /* Opera */ 
+  background-image: -o-linear-gradient(bottom, #f05f64 0%, #e4474d 100%);
+      /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f05f64), color-stop(1, #e4474d));
+      /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom, #f05f64 0%, #e4474d 100%);
+      /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top, #f05f64 0%, #e4474d 100%);
 }
 
 .save-btn {
-  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  width: 150px;
+  height: 44px;
   background-color: #57ba45;
   color: white;
-  border: 1px solid black;
+  border: 1px solid #409433;
   border-radius: 3px;
   margin-left: -4px;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom, #61c641 0%, #4fb048 100%);
+      /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom, #61c641 0%, #4fb048 100%);
+      /* Opera */ 
+  background-image: -o-linear-gradient(bottom, #61c641 0%, #4fb048 100%);
+      /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #61c641), color-stop(1, #4fb048));
+      /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom, #61c641 0%, #4fb048 100%);
+      /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top, #61c641 0%, #4fb048 100%);
+}
+
+.delete-btn, .add-btn {
+  height: 22px;
+  border: 1px solid #cecece;
+  margin-left: -2px;
+  vertical-align: middle;
+  margin-top: -3px;
+  line-height: 16px;
 }
 
 .delete-btn {
-  width: 15px;
+  background-color: #d7d3c8;
+  
+}
+
+.delete-btn > img {
+  vertical-align: middle;
 }
 
 .add-btn, .write-btn {
@@ -273,23 +324,42 @@ a:hover {
 }
 
 .alert {
-  height: 20px;
+  height: 28px;
+  line-height: 24px;
   background-color: #cedfeb;
+  font-size: 16px;
   text-align: center;
-  color: #7979E0;
-  border: 1px solid #7979E0;
+  color: #1d8fc9;
+  border: 1px solid #68bbf2;
   border-radius: 3px;
   padding-top: 5px;
 }
 
+.alert img {
+  margin-right: 15px;
+}
+
 .status-res > div{
+  height: 70px;
+  background-color: #FFF;
   display: inline-block;
   width: 48%;
   text-align: center;
 }
 
-.keywords > input, .keywords > .delete-btn {
+.status-res label {
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 2px solid #e7e5de;
+}
+
+.status-res select {
+  margin-top: 5px;
+}
+
+.keywords > input {
   background-color: #d7d3c8;
+  height: 20px;
 }
 
 .product > select, .component > select {
