@@ -141,7 +141,9 @@
       <div class="assignee">
         <label>ASSIGNEE:</label>
         <input type="text" placeholder="bug@mozilla.org">
-        <button class="add-btn">+</button>
+        <button class="inbox-btn">
+          <img src="images/inbox.png" alt="Inbox" />
+        </button>
         <hr>
       </div>
       <div>
@@ -165,9 +167,11 @@
         <label>CC LIST:</label>
         <div>
           42 users (including you)
-          <button class="write-btn">i pen</button>
+          <button class="write-btn">
+            <img src="images/whitepencil.png" alt="Edit" />
+          </button>
         </div>
-        <label>
+        <label class="notifications">
           <input type="checkbox">
           Send me notifications about this bug
         </label>
@@ -177,7 +181,9 @@
         <label>GROUPS:</label>
         <div>
           2 groups selected
-          <button class="write-btn">i</button>
+          <button class="write-btn">
+            <img src="images/whitepencil.png" alt="Edit" />
+          </button>
         </div>
         <hr>
       </div>
@@ -185,10 +191,14 @@
         <label>FLAGS <a href="#">?</a></label>
         <div>
           <input type="text">
-          <button class="write-btn">i</button>
-          <button type="button" class="delete-btn">x</button>
+          <button class="write-btn">
+            <img src="images/smallgraypencil.png" alt="Edit" />
+          </button>
+          <button type="button" class="delete-btn">
+            <img src="images/grayx.png" alt="Remove" />
+          </button>
         </div>
-        <div>
+        <div class="label-btn">
           <label>Add a flag
             <button class="add-btn">+</button>
           </label>
@@ -199,12 +209,51 @@
         <label>SEE ALSO <a href="#">?</a>
           <input type="text">
         </label>
-        <label>Add a URL
-          <button class="add-btn">+</button>
-        </label>
-        <hr>
+        <div class="label-btn">
+          <label>Add a URL
+            <button class="add-btn">+</button>
+          </label>
+        </div>
       </div>
-
+      <div class="not-used">
+        <h2>
+          Not Used Yet
+        </h2>
+        <hr>
+        <div>
+          <label>Qa Contact</label>
+          <button class="add-btn">+</button>
+          <hr>
+        </div>
+        <div>
+          <label>Crash signature</label>
+          <button class="add-btn">+</button>
+          <hr>
+        </div>
+        <div>
+          <label>Project flags</label>
+          <div class="label-btn">
+            <label> Add a project flag
+              <button class="add-btn">+</button>
+            </label>
+          </div>
+          <hr>
+        </div>
+        <div>
+          <label>Tracking flags</label>
+          <div class="label-btn">
+            <label> Add a tracking flag
+              <button class="add-btn">+</button>
+            </label>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div>
+        <button class="cancel-btn">Cancel</button>
+        <button class="save-btn">Save</button>
+      </div>
+      <p></p>
     </div>
   </div>
 </body>

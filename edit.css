@@ -37,6 +37,12 @@ hr {
   border-top: 1px dotted #d7d3c8;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #4E4E4E
+}
+
 img {
   vertical-align: middle;
 }
@@ -48,6 +54,7 @@ input, select, textarea {
   display: inline-block;
   height: 26px;
   font-size: 16px;
+  color: #4E4E4E;
   padding: 2px;
   padding-left: 4px;
 }
@@ -63,13 +70,22 @@ select {
 
 input[type=checkbox] {
   display: inline-block;
+  vertical-align: middle;
   width: 15px;
+  margin-bottom: 5px;
 }
 
 label {
   display: block;
   text-transform: uppercase;
   margin-bottom: 3px;
+}
+
+label a {
+  font-weight: 400;
+  text-transform: none;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 button {
@@ -221,23 +237,29 @@ a:hover {
   display: inline-block;
   position: absolute;
   right: 80px;
-  top: 261px;
+  top: 254px;
   background-color: #f2f0e9;
-
-  width: 300px;
+  width: 325px;
 }
 
 .edit-side-bar > div {
   display: inline-block;
-  width: 100%;
-  float: left;
-  margin-top: 0.5em;
+  width: 325px;
+  margin-top: 7px;
   font-size: 16px;
 }
 
 .edit-side-bar label {
   font-size: 11px;
   font-weight: 800;
+}
+
+.edit-side-bar a {
+  color: #0095dd;
+}
+
+.edit-side-bar hr {
+  margin-bottom: 10px;
 }
 
 .with-button > input {
@@ -248,7 +270,7 @@ a:hover {
 .cancel-btn {
   font-size: 20px;
   font-weight: 400;
-  width: 150px;
+  width: 162px;
   height: 44px;
   background-color: #ea5439;
   color: white;
@@ -272,7 +294,7 @@ a:hover {
 .save-btn {
   font-size: 20px;
   font-weight: 400;
-  width: 150px;
+  width: 162px;
   height: 44px;
   background-color: #57ba45;
   color: white;
@@ -305,18 +327,34 @@ a:hover {
 
 .delete-btn {
   background-color: #d7d3c8;
-  
+
 }
 
 .delete-btn > img {
   vertical-align: middle;
 }
 
-.add-btn, .write-btn {
+.add-btn, .write-btn, .inbox-btn {
+  color: white;
   width: 22px;
   height: 22px;
+  border: 1px solid #62b5f0;
   border-radius: 3px;
   background-color:#69bcf3;
+  margin-left: 5px;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom, #77c6f5 0%, #5fb0eb 100%);
+      /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom, #77c6f5 0%, #5fb0eb 100%);
+      /* Opera */ 
+  background-image: -o-linear-gradient(bottom, #77c6f5 0%, #5fb0eb 100%);
+      /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #77c6f5), color-stop(1, #5fb0eb));
+      /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom, #77c6f5 0%, #5fb0eb 100%);
+      /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top, #77c6f5 0%, #5fb0eb 100%);
 }
 
 .write-btn {
@@ -343,7 +381,7 @@ a:hover {
   height: 70px;
   background-color: #FFF;
   display: inline-block;
-  width: 48%;
+  width: 49%;
   text-align: center;
 }
 
@@ -363,31 +401,68 @@ a:hover {
 }
 
 .product > select, .component > select {
-  width: 300px;
+  width: 325px;
 }
 
 .version > select {
-  width: 170px;
+  width: 203px;
 }
 
 .hardware > select, .importance > select {
-  width: 192px;
+  width: 60%;
 }
 
 .hardware select:first-of-type, .importance select:first-of-type {
-  width: 100px;
+  width: 37%;
   margin-right: 5px;
 }
 
 .assignee > input {
-  width: 265px;
+  width: 286px;
+}
+
+.assignee img, .write-btn img {
+  margin-bottom: 10px;
+  margin-left: -2px;
 }
 
 .cc > div, .groups > div {
-  color: #69bcf3;
+  color: #0095dd;
   font-size: 16px
+}
+
+.cc .notifications {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4c4c4c;
+  text-transform: none;
+}
+
+.flags table {
+
 }
 
   .flags input {
   width: 245px;
+}
+
+.not-used label {
+  display: inline-block;
+}
+
+.label-btn label{
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid #62b5f0;
+  border-radius: 3px;
+  background-color:#69bcf3;
+}
+
+.label-btn button {
+  float: right;
+  margin-top: 0px;
 }
