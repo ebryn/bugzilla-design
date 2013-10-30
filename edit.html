@@ -5,33 +5,37 @@
   <link rel='stylesheet' href='normalize.css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,800,700' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='edit.css'>
-
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.css">
+  <style>
+    .chosen-container-single .chosen-single {
+      background: #fff;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
-    <div class="main-view">
-
-      <div class="bug-info">
-        <div>
-          <p class="bug-name">Implement Promises</p>
-          <span class="bug-no">
-            Bug12345
-          </span>
-        </div>
-        <div class="bug-stats">
-          <span>Reported at:</span>
-          <p>2213-03-04</p>
-          <span>By:</span>
-          <p>2213-03-04</p>
-          <span>last updated:</span>
-          <p>2213-03-04</p>
-          <div class="bug-alias">
-            <span>alias:</span>
-            <p>(itsApromise)</p>
-          </div>
+    <div class="bug-info">
+      <div>
+        <input type="text" class="bug-name" value="Implement Promises">
+        <span class="bug-no">
+          Bug12345
+        </span>
+      </div>
+      <div class="bug-stats">
+        <span>Reported at:</span>
+        <p>2213-03-04</p>
+        <span>By:</span>
+        <p>2213-03-04</p>
+        <span>last updated:</span>
+        <p>2213-03-04</p>
+        <div class="bug-alias">
+          <span>alias:</span>
+          <p>(itsApromise)</p>
         </div>
       </div>
+    </div>
 
+    <div class="main-view">
       <div class="attachments">
 
       </div>
@@ -256,5 +260,11 @@
       <p></p>
     </div>
   </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.jquery.js"></script>
+  <script>
+    $("select").chosen({disable_search_threshold: 1000});
+  </script>
 </body>
 </html>
