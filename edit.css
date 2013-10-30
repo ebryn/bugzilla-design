@@ -23,9 +23,6 @@
   font-style: italic;
 }
 
-
-
-
 body {
   font-family: Open Sans, Helvetica, sans serif;
   font-size: 16px;
@@ -123,7 +120,7 @@ a:hover {
 
 .bug-name {
   width: 1000px;
-  height: 40px;
+  height: 46px;
   font-weight: 300;
   font-size: 30px;
   color: #4f4f4f;
@@ -439,19 +436,11 @@ a:hover {
   text-transform: none;
 }
 
-.flags table {
-
-}
-
-  .flags input {
-  width: 245px;
-}
-
 .not-used label {
   display: inline-block;
 }
 
-.label-btn label{
+.label-btn label {
   text-transform: none;
   font-size: 14px;
   font-weight: 600;
@@ -461,9 +450,109 @@ a:hover {
   border: 1px solid #62b5f0;
   border-radius: 3px;
   background-color:#69bcf3;
+  box-sizing: border-box;
 }
 
 .label-btn button {
   float: right;
-  margin-top: 0px;
+  margin: -1px 0; /* for the left border to grow past the label's border */
+  background: transparent;
+  border: none;
+  border-left: 1px solid white;
+  border-radius: 0px;
+  border-radius
 }
+
+.label-btn.with-table label {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.table-container td {
+  box-sizing: border-box; /* this fixes width issues related to padding */
+}
+
+.table-container {
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #C4C4C4;
+  overflow: hidden;
+}
+
+.table-container.with-button {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 13px;
+  border-collapse: collapse;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  border: 1px solid #C4C4C4;
+  padding: 2px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table tbody tr:first-of-type td {
+  border-top: none;
+}
+
+.table tbody tr td:first-of-type {
+  border-left: none;
+}
+
+.table tbody tr td:last-of-type {
+  border-right: none;
+}
+
+.table tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+.table tbody tr:last-of-type td:first-of-type {
+  border-left: none;
+}
+
+.table tbody tr:last-of-type td:last-of-type {
+  border-right: none;
+}
+
+.table .deleted {
+  background-color: #FEE6E7;
+}
+
+.table tfoot td {
+  padding: 0;
+}
+
+.table tfoot .label-btn label {
+  margin: 0px;
+}
+
+.flag-name {
+  width: 95px;
+}
+
+.flag-status {
+  width: 20px;
+  text-align: center;
+}
+
+.button-cell {
+  width: 22px;
+  text-align: center;
+}
+
+  .button-cell button {
+    border: none;
+    background: none;
+    padding: 0;
+  }
