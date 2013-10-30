@@ -334,7 +334,7 @@ a:hover {
   vertical-align: middle;
 }
 
-.add-btn, .write-btn, .inbox-btn {
+.add-btn, .write-btn, .inbox-btn, .add-pop-btn {
   color: white;
   width: 22px;
   height: 22px;
@@ -355,6 +355,11 @@ a:hover {
   background-image: -webkit-linear-gradient(bottom, #77c6f5 0%, #5fb0eb 100%);
       /* W3C Markup, IE10 Release Preview */
   background-image: linear-gradient(to top, #77c6f5 0%, #5fb0eb 100%);
+}
+
+.add-pop-btn {
+  height: auto;
+  width: auto;
 }
 
 .write-btn {
@@ -553,8 +558,59 @@ a:hover {
   text-align: center;
 }
 
-  .button-cell button {
-    border: none;
-    background: none;
-    padding: 0;
-  }
+.button-cell button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.popover {
+  background-color: #fff;
+  height: 125px;
+  width: 345px;
+  position: absolute;
+  border-color: #e8e7e0;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 8px 7px 28px rgba(0, 0, 0, 0.5);
+  right: 345px;
+  top: 213px;
+}
+
+.popover-content {
+  margin: 15px;
+  margin-top: -10px;
+}
+
+.popover label {
+  margin-bottom: 15px;
+}
+
+.popover label > input {
+  margin-top: 3px;
+}
+
+.popover span {
+  vertical-align: baseline;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.popover a {
+  font-size: 14px;
+  vertical-align: sub;
+}
+
+.add-pop-btn {
+  float: right;
+}
+
+.keywords-popover .pointy {
+  position: relative;
+  width: 0;
+  height: 0;
+  right: -325px;
+  top: 48px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+}
