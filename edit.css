@@ -230,6 +230,8 @@ a:hover {
   width: 831px;
   margin-left: 34px;
   margin-bottom: 28px;
+  font-family: 'Droid Sans Mono', Menlo, Courier, monospace;
+  font-size: 13px;
 }
 
 .edit-side-bar {
