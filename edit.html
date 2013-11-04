@@ -38,7 +38,7 @@
         <p>2213-03-04</p>
         <div class="bug-alias">
           <label>alias:
-          <input type="text" placeholder="none">
+            <input type="text" placeholder="none">
           </label>
         </div>
       </div>
@@ -61,45 +61,45 @@
           <hr>
         </header>
         <pre class="comment-text">
-Here's a proposal for a new kind of object that will give programmers the ability to take a potentially large amount of source code and ask for it to be compiled asynchronously, in order to have more control over compile times. In particular, it allows an interactive application to provide temporary UI while code is being parsed and possibly compiled.
+          Here's a proposal for a new kind of object that will give programmers the ability to take a potentially large amount of source code and ask for it to be compiled asynchronously, in order to have more control over compile times. In particular, it allows an interactive application to provide temporary UI while code is being parsed and possibly compiled.
 
-The proposal:
+          The proposal:
 
-- a new kind of object called a FunctionFuture, which obeys the upcoming DOMFuture spec [1]
+          - a new kind of object called a FunctionFuture, which obeys the upcoming DOMFuture spec [1]
 
-- the arguments to FunctionFuture are the same as the arguments to Function
+          - the arguments to FunctionFuture are the same as the arguments to Function
 
-- the fulfillment of a FunctionFuture is a Function that's constructed in the same way as `new Function` would have been
+          - the fulfillment of a FunctionFuture is a Function that's constructed in the same way as `new Function` would have been
 
-- the fulfilling of a FunctionFuture is done off the main thread; when the .then method is invoked, the Function must already be created
+          - the fulfilling of a FunctionFuture is done off the main thread; when the .then method is invoked, the Function must already be created
 
-- a FunctionFuture can be copied to different workers:
-  * each worker sees a distinct Function object as the fulfilled result
-  * but internally, the actual work of compiling the Function can be done in one thread; the various threads can share the resulting internal compiled code (e.g. the results of AOT compiling an asm.js function)
+          - a FunctionFuture can be copied to different workers:
+          * each worker sees a distinct Function object as the fulfilled result
+          * but internally, the actual work of compiling the Function can be done in one thread; the various threads can share the resulting internal compiled code (e.g. the results of AOT compiling an asm.js function)
 
-- a FunctionFuture can be stored via IndexedDB:
-  * the arguments and body source are stored
-  * if the future is fulfilled, we also store any compiled code, along with cache validation information based on the browser version and cpuid
-  * when reading back the results, if the compiled code is still valid, the future can come back already fulfilled; otherwise it comes back unfulfilled -- whether the future comes back fulfilled is unspecified and left to the implementation
+          - a FunctionFuture can be stored via IndexedDB:
+          * the arguments and body source are stored
+          * if the future is fulfilled, we also store any compiled code, along with cache validation information based on the browser version and cpuid
+          * when reading back the results, if the compiled code is still valid, the future can come back already fulfilled; otherwise it comes back unfulfilled -- whether the future comes back fulfilled is unspecified and left to the implementation
 
-Rationale:
+          Rationale:
 
-- It's built off of Function rather than (indirect) eval for several reasons:
-  * either Function or top-level indirect eval are equally powerful, so there's no loss of expressiveness
-  * but Function ensures there's no runtime execution required to construct it
-  * so the only errors are compile-time errors, meaning that there's no need to distinguish compile-time from runtime errors
-  * and sharing across workers means you want to defer execution to be done separately in each worker that touches the function; a Function makes the semantics of this straightforward
-  * it also makes it clear that the only actual significant work to do is compilation
+          - It's built off of Function rather than (indirect) eval for several reasons:
+          * either Function or top-level indirect eval are equally powerful, so there's no loss of expressiveness
+          * but Function ensures there's no runtime execution required to construct it
+          * so the only errors are compile-time errors, meaning that there's no need to distinguish compile-time from runtime errors
+          * and sharing across workers means you want to defer execution to be done separately in each worker that touches the function; a Function makes the semantics of this straightforward
+          * it also makes it clear that the only actual significant work to do is compilation
 
-- The use of futures allows for a single asynchronous interface for:
-  * the initial compilation of source
-  * extracting a function from offline storage, which may or may not require recompilation (and should therefore also be asynchronous)
+          - The use of futures allows for a single asynchronous interface for:
+          * the initial compilation of source
+          * extracting a function from offline storage, which may or may not require recompilation (and should therefore also be asynchronous)
 
-- The use of futures will also make it possible to chain multiple async steps with the convenient semantics of .then
+          - The use of futures will also make it possible to chain multiple async steps with the convenient semantics of .then
 
-Dave
+          Dave
 
-[1] https://github.com/slightlyoff/DOMFuture
+          [1] https://github.com/slightlyoff/DOMFuture
         </pre>
       </div>
       <div class="comments-show-all">
@@ -385,11 +385,33 @@ Dave
       </div>
       <p></p>
 
+      <div class="cc-popover popover">
+        <div class="pointy"></div>
+        <div class="popover-content">
+          <div>
+            <label>add new email: </label>
+            <input type="text" placeholder="start typing...">
+            <button type="button" class="add-pop-btn">Add</button>
+          </div>
+          <div class="cc-list-pop">
+            <label>cc list: </label>
+            <textarea placeholder="..."></textarea>
+          </div>
+
+          <div>
+            <button type="button" class="remove-cc-btn">Remove Selected CCs</button>
+          </div>
+
+
+          <span><a href="#">Cancel & Close</a></span>
+        </div>
+      </div>
+
       <div class="keywords-popover popover">
         <div class="pointy"></div>
         <div class="popover-content">
           <label>keyword:
-          <input type="text" placeholder="start typing...">
+            <input type="text" placeholder="start typing...">
           </label>
           <span><a href="#">Cancel & Close</a></span>
           <button type="button" class="add-pop-btn">Add</button>
