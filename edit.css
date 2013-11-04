@@ -422,9 +422,34 @@ a:hover {
   margin-top: 4px;
 }
 
-.keywords > input {
+.keywords > div {
+  display: inline-block;
   background-color: #d7d3c8;
   height: 20px;
+  width: 181px;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.keywords button > img {
+  padding-bottom: 5px;
+}
+
+.keywords > button {
+  vertical-align: text-top;
+  margin-left: -3px;
+  height: 20px;
+}
+
+.keywords .delete-btn {
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.keywords .add-btn {
+  margin-left: 2px;
 }
 
 .product > select, .component > select {
