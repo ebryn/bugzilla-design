@@ -234,6 +234,17 @@ a:hover {
   font-size: 13px;
 }
 
+.new-comment > textarea {
+  width: 99%;
+  height: 120px;
+  padding: 5px;
+}
+
+.new-comment button {
+  float: right;
+  margin-top: 7px;
+}
+
 .edit-side-bar {
   position: absolute;
   right: 0px;
@@ -334,7 +345,7 @@ a:hover {
   vertical-align: middle;
 }
 
-.add-btn, .write-btn, .inbox-btn, .add-pop-btn {
+.add-btn, .write-btn, .inbox-btn, .add-pop-btn, .save-comment-btn{
   color: white;
   width: 22px;
   height: 22px;
@@ -357,7 +368,7 @@ a:hover {
   background-image: linear-gradient(to top, #77c6f5 0%, #5fb0eb 100%);
 }
 
-.add-pop-btn {
+.add-pop-btn, .save-comment-btn{
   height: auto;
   width: auto;
 }
