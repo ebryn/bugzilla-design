@@ -385,6 +385,17 @@
       </div>
       <p></p>
 
+      <div class="keywords-popover popover">
+        <div class="pointy"></div>
+        <div class="popover-content">
+          <label>keyword:
+            <input type="text" placeholder="start typing...">
+          </label>
+          <span><a href="#">Cancel & Close</a></span>
+          <button type="button" class="add-pop-btn">Add</button>
+        </div>
+      </div>
+
       <div class="cc-popover popover">
         <div class="pointy"></div>
         <div class="popover-content">
@@ -401,18 +412,27 @@
           <div>
             <button type="button" class="remove-cc-btn">Remove Selected CCs</button>
           </div>
-
-
           <span><a href="#">Cancel & Close</a></span>
         </div>
       </div>
 
-      <div class="keywords-popover popover">
+      <div class="groups-popover popover">
         <div class="pointy"></div>
         <div class="popover-content">
-          <label>keyword:
-            <input type="text" placeholder="start typing...">
-          </label>
+          <label>groups:</label>
+          <p>Only users in all of the selected groups can view this bug:</p>
+          <p>Unchecking all boxes makes this a public bug</p>
+          <div class="group-checks">
+            <div>
+              <input type="checkbox">Confidential Mozilla Corporation Bug</input>
+            </div>
+            <div>
+              <input type="checkbox">Security-sensitive Core Bug</input>
+            </div>
+            <div>
+              <input type="checkbox">Group 3</input>
+            </div>
+          </div>
           <span><a href="#">Cancel & Close</a></span>
           <button type="button" class="add-pop-btn">Add</button>
         </div>

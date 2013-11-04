@@ -656,6 +656,30 @@ a:hover {
   margin-left: 0px;
 }
 
+.groups-popover {
+  top: 979px;
+  min-height: 245px;
+}
+
+.groups-popover .pointy {
+  top: 45%;
+}
+
+.group-checks input {
+  display: inline-block;
+  clear: left;
+  margin-right: 3px;
+}
+
+.groups-popover p:last-of-type {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.groups-popover p:first-of-type {
+  margin-bottom: -12px;
+}
+
 .see-also-popover {
   top: 1257px;
 }
@@ -707,8 +731,12 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.flag-popover label, .cc-popover label {
+.flag-popover label, .cc-popover label,  .cc-list-pop label{
   margin-bottom: 3px;
+}
+
+.groups-popover label {
+  margin-bottom: -19px;
 }
 
 .popover label > input {
