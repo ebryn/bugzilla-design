@@ -415,7 +415,11 @@ a:hover {
 }
 
 .status-res select {
-  margin-top: 5px;
+  width: 140px;
+}
+
+.status-res .chosen-container {
+  margin-top: 4px;
 }
 
 .keywords > input {
