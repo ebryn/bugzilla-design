@@ -624,6 +624,55 @@ a:hover {
   top: 213px;
 }
 
+
+.popover button {
+  font-size: 14px;
+  font-weight: 600;
+  height: 28px;
+}
+
+.see-also-popover {
+  top: 1257px;
+}
+
+.flag-popover {
+  top: 1104px;
+  height: 163px;
+}
+
+.popover-content div > div {
+  display: inline-block;
+  width: auto;
+}
+
+.flag-name-pop select {
+  width: 200px;
+  margin-left: -3px;
+}
+
+.flag-name-pop {
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+
+.status-pop select {
+  width: 80px;
+}
+
+.requestee-pop {
+  margin-top: 3px;
+}
+
+.requestee-pop input {
+  width: 200px;
+  height: 23px;
+}
+
+.flag-popover .pointy {
+  top: 65px;
+}
+
 .popover-content {
   margin: 15px;
   margin-top: -10px;
@@ -631,6 +680,10 @@ a:hover {
 
 .popover label {
   margin-bottom: 15px;
+}
+
+.flag-popover label {
+  margin-bottom: 3px;
 }
 
 .popover label > input {
@@ -651,7 +704,7 @@ a:hover {
   float: right;
 }
 
-.keywords-popover .pointy {
+.pointy {
   position: relative;
   width: 0;
   height: 0;
